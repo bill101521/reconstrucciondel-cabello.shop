@@ -168,7 +168,7 @@ var startWatchVideoProgress = function () {
 if (typeof smartplayer === 'undefined' && !(smartplayer.instances && smartplayer.instances.length)) {
 attempts += 1;
 if (attempts >= 10) return;
-return setTimeout(function () { startWatchVideoProgress() }, 430000);
+return setTimeout(function () { startWatchVideoProgress() }, 430);
 }
 
 smartplayer.instances[0].on('timeupdate', () => {
@@ -178,7 +178,7 @@ showEls();
 }
 
 if (alreadyElsDisplayed === 'true') {
-setTimeout(function () { showEls(); }, 100);
+setTimeout(function () { showEls(); }, 43);
 } else {
 startWatchVideoProgress()
 }
