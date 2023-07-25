@@ -140,50 +140,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="elementor-element elementor-element-2eb80d29 elementor-widget elementor-widget-html" data-id="2eb80d29" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
 			<style>
-.esconder {display:none}
-</style>
+</div>
+				<div class="elementor-element elementor-element-11fdd5ed atrasado elementor-widget elementor-widget-html" data-id="11fdd5ed" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<!-- HOTMART - Upsell Widget -->
+<div id="box_hotmart"></div>
+<script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
 
-<script type="text/javascript">
-window.onload = function () {
-/* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
-var SECONDS_TO_DISPLAY = 200;
-var CLASS_TO_DISPLAY = ".esconder";
+<script>
+opts = {
+key: 'USL-108329-332531-331ddfe0ab27836024cb453a9b858ff9',
+width: '650' ,
+height: '420'
+};
+Upsell.Widget.show(opts);
+</script>
+<!-- HOTMART - Upsell Widget [end] -->
 
-/* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
-var attempts = 0;
-var elsHiddenList = [];
-var elsDisplayed = false;
-var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
-var alreadyElsDisplayed = localStorage.getItem('alreadyElsDisplayed');
 
-setTimeout(function () { elsHiddenList = Array.prototype.slice.call(elsHidden); }, 0);
-
-var showEls = function () {
-elsDisplayed = true;
-elsHiddenList.forEach((e) => e.style.display = "block");
-localStorage.setItem('alreadyElsDisplayed', true)
-}
-
-var startWatchVideoProgress = function () {
-if (typeof smartplayer === 'undefined' && !(smartplayer.instances && smartplayer.instances.length)) {
-attempts += 1;
-if (attempts >= 10) return;
-return setTimeout(function () { startWatchVideoProgress() }, 430);
-}
-
-smartplayer.instances[0].on('timeupdate', () => {
-if (elsDisplayed || smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
-showEls();
-})
-}
-
-if (alreadyElsDisplayed === 'true') {
-setTimeout(function () { showEls(); }, 43);
-} else {
-startWatchVideoProgress()
-}
-}
-</script>		</div>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-5d929585 elementor-widget elementor-widget-html" data-id="5d929585" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+$('.atrasado').hide();
+setTimeout(function() {
+$('.atrasado').show();
+}, 430000);
+</script>		</div>		</div>
 				</div>
 				<div class="elementor-element elementor-element-270a316e elementor-widget elementor-widget-text-editor" data-id="270a316e" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
