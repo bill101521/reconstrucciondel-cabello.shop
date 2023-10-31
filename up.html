@@ -119,6 +119,15 @@ Upsell.Widget.show(opts);
   setTimeout(function() {
     var hotmartBox = document.getElementById('box_hotmart');
     hotmartBox.style.display = 'block';
+    var script = document.createElement('script');
+    script.src = "https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js";
+    document.body.appendChild(script);
+    opts = {
+      chave: 'USL-108520-333115-1664749f8be02eb98973ea70968dedd4',
+      largura: '650',
+      altura: '420'
+    };
+    Upsell.Widget.show(opts);
   }, 430000);
 </roteiro>
 
