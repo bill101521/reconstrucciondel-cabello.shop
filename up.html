@@ -115,21 +115,18 @@ height: '420'
 Upsell.Widget.show(opts);
 </script>
 <!-- HOTMART - Upsell Widget [end] -->
-	      <div id="box_hotmart" style="display: none;"></div>
-<script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
-
-<roteiro>
-  setTimeout(function() {
-    var hotmartBox = document.getElementById('box_hotmart');
-    hotmartBox.style.display = 'block';
-    opts = {
-      chave: 'USL-108520-333115-1664749f8be02eb98973ea70968dedd4',
-      largura: '650',
-      altura: '420'
-    };
-    Upsell.Widget.show(opts);
-  }, 430000);
-</roteiro>
+	      <script>
+setTimeout(function() {
+  var hotmartBox = document.getElementById('box_hotmart');
+  hotmartBox.style.display = 'block';
+  opts = {
+    chave: 'USL-108520-333115-1664749f8be02eb98973ea70968dedd4',
+    largura: '650',
+    altura: '420'
+  };
+  Upsell.Widget.show(opts);
+}, 430000);
+</script>
 
       </div></div></div></div></section></div>
 
